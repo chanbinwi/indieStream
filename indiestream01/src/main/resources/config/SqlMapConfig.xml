@@ -11,6 +11,10 @@
 	<typeAliases>
 		<typeAlias type="spring.indiestream.domain.MemberVO" alias="member"/>
 		<typeAlias type="spring.indiestream.domain.GenreVO" alias="genre"/>
+		<typeAlias type="spring.indiestream.domain.SnsBoardVO" alias="sns"/>
+		<typeAlias type="spring.indiestream.domain.ImageVO" alias="image"/>
+		<typeAlias type="spring.indiestream.domain.HashtagVO" alias="hash"/>
+
 	</typeAliases>
 	
 	<environments default="development">
@@ -28,5 +32,8 @@
 	<mappers>
 		<mapper resource="sql/member.xml"/>
 		<mapper resource="sql/genre.xml"/>
+		<mapper resource="sql/snsBoard.xml"/>
+		<mapper resource="sql/image.xml"/>
+		<mapper resource="sql/hashtag.xml"/>		
 	</mappers>
 </configuration>
