@@ -6,7 +6,7 @@ public class MemberVO {
 	private String memberId;
 	private String password;
 	private String name;
-	private String profilePhoto;
+	private String profilePhto;
 	private String introduction;
 	private int reportCount;
 	private List<String> genreList;
@@ -29,10 +29,10 @@ public class MemberVO {
 		this.name = name;
 	}
 	public String getProfilePhto() {
-		return profilePhoto;
+		return profilePhto;
 	}
 	public void setProfilePhto(String profilePhto) {
-		this.profilePhoto = profilePhto;
+		this.profilePhto = profilePhto;
 	}
 	public String getIntroduction() {
 		return introduction;
