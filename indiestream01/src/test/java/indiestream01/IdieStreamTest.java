@@ -2,7 +2,6 @@ package indiestream01;
 
 import java.io.IOException;
 import java.io.Reader;
-
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,12 +14,12 @@ public class IdieStreamTest {
 
 	public static void main(String[] args) throws IOException {
 		SqlSession session = null;
-		//==> TestUtil ÀÇ getSqlSessionFactory()À» ÀÌ¿ë SqlSessionFactory instance GET
+		//==> TestUtil ï¿½ï¿½ getSqlSessionFactory()ï¿½ï¿½ ï¿½Ì¿ï¿½ SqlSessionFactory instance GET
 		SqlSessionFactory factory = getSqlSessionFactory();
 		session=factory.openSession();
 		
 			
-		//==> MyBatisUserDAOImpl10 »ý¼º ¹× sqlMapClient °´Ã¼ setter injection
+		//==> MyBatisUserDAOImpl10 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ sqlMapClient ï¿½ï¿½Ã¼ setter injection
 		GenreDAO dao = new GenreDAOImpl();
 		dao.setSqlSession(session);
 		
